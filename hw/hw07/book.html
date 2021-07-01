@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>예매</title>
+        <style>
+            header div#center {
+            background-color: rgb(226, 226, 226);
+            width: 210px;
+            padding: 15px 50px;
+            border: 4px lightsteelblue solid;
+            border-style: double;
+            margin: 20px;
+        }
+        header a{
+            text-decoration: none;
+        }
+
+        header #menu {
+            clear: both;
+            height: 40px;
+            background-color: lightsteelblue;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+        }
+        header li{
+            display: inline;
+        }
+        main div#border{
+            margin-top: 100px;
+            border: 5px lightsteelblue solid;
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+        }
+        main form{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <div id="center"><a href="./hw07.html">한별 아트센터</a></div>
+            </h1>
+            <ul id="menu">
+                <li class="item">예매</li>
+            </ul>
+        </header>
+        <main>
+            <div id="border">
+            <article>
+                <form>
+                    <p/>
+                    <strong>예매</strong>
+                    <br><br>
+                    날짜 : <input type="date" name="book"><br>
+                    <br>
+                    공연 : 
+                    <select>
+                        <option>청소년대상 물 토크 콘서트</option>
+                        <option>시네마 클래식 데이</option>
+                    </select>
+                    <br><br>
+                    <textarea rows="1" cols="50">예매 좌석을 적어주세요</textarea><br>
+                    <br>
+                    이메일: <input type="email" name="myemail" placeholder="예매 확인 이메일"><br>
+                    <br>
+                        <div>
+                        <input type="submit" value="제출">
+                        <input type="reset" value="다시 쓰기">
+                        </div>
+                </form>
+            </article>
+            </div>
+        </main>
+    </body>
+</html>
