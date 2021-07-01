@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>좌석배치도</title>
+    <style>
+         body{
+            margin: 0;
+        }
+        div#center{
+            background-color: rgb(226, 226, 226);
+            width: 210px;
+            padding: 15px 50px;
+            border: 4px lightsteelblue solid;
+            border-style: double;
+            margin: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: lightsteelblue;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+        }
+
+        #menu li {
+            display: inline;
+        }
+        .item {
+            margin: 0 30px 0 30px;
+        }
+        div#columns{
+                column-width: 330px;
+                margin-top: 100px;
+            border: 5px lightsteelblue solid;
+            padding: 40px;
+            margin: 20px;
+            width: 90%;
+            text-align: left;
+            }
+            img{
+                width: 300px;
+            }
+            figure{
+                float: left;
+                text-align: center;
+            }
+            #columns figure img{
+                width: 100%;/*이미지 잘리는 것 방지*/
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><div id="center"><a href="hw06.html">한별 아트센터</a></div></h1>
+    <ul id="menu">
+        <li class="item">극장 좌석배치도</li>
+    </ul>
+        </header>
+        <article>
+            <center>
+            <div id="columns">
+                <figure>
+                    <img src="img/seat1.png">
+                    <figcaption>극장A 좌석배치도</figcaption>
+                 </figure>
+                 <figure>
+                     <img src="img/seat2.png">
+                     <figcaption>극장B 좌석배치도</figcaption>
+                 </figure>
+                 <figure>
+                     <img src="img/seat3.png">
+                     <figcaption>극장C 좌석배치도</figcaption>
+                 </figure>
+                 </div>
+                 </center>
+        </article>
+    </main>
+</body>
+
+</html>
