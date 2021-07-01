@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hw06</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header div#center {
+            background-color: rgb(226, 226, 226);
+            width: 210px;
+            padding: 15px 50px;
+            border: 4px lightsteelblue solid;
+            border-style: double;
+            margin: 20px;
+        }
+
+        header div#top {
+            float: right;
+            margin: 0 24px 5px 0;
+        }
+
+        main img#center {
+            width: 100%;
+            height: 70%
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        main a#facility {
+            color: white;
+            text-decoration: none;
+        }
+
+        main #grid ol {
+            border-right: 1px solid lightsteelblue;
+            width: 120px;
+            margin: 0;
+            padding: 22px 15px 20px 45px;
+        }
+
+        main #grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            border: 1px solid lightsteelblue;
+            margin-bottom: 10px;
+        }
+
+        #article {
+            padding-left: 80px;
+        }
+
+        @media(max-width: 600px) {
+            #grid {
+                display: block;
+            }
+
+            #grid ol {
+                border-right: none;
+            }
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #menu {
+            clear: both;
+            height: 40px;
+            background-color: lightsteelblue;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 30px 0 30px;
+        }
+
+        .line {
+            margin-top: 20px;
+            border-top: solid 1px lightsteelblue;
+        }
+
+        header #language {
+            float: right;
+            margin: 0 24px 10px 0;
+        }
+
+        footer {
+            padding: 20px 0 0 15px;
+            color: #666666;
+            font-size: 10px;
+        }
+
+        footer #address {
+            float: left;
+        }
+
+        footer #link {
+            float: right;
+            font-size: 16pt;
+        }
+
+        footer #footer_menu li {
+            margin-top: 5px;
+        }
+
+        footer #ask {
+            color: purple;
+        }
+
+        footer #company_info {
+            margin-top: 20px;
+        }
+
+        footer #company_info li {
+            margin-top: 2px;
+        }
+
+        footer #copyright {
+            margin-top: 10px;
+            font-size: 8px;
+            color: #06b5b8;
+        }
+
+        footer #link select {
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        footer h3{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <div id="center"><a href="hw06.html">한별 아트센터</a></div>
+        </h1>
+        <article id="language">
+            Language:
+            <select>
+                <option>한국어</option>
+                <option>English</option>
+            </select>
+        </article>
+        <div class="clear">
+            <div id="top">
+                <a href="introduce.html">아트센터 소개</a> | <a href="performance.html">공연 안내</a> | <a href="map.html">오시는
+                    길</a>
+            </div>
+    </header>
+    <main>
+        <article>
+            <img id="center" src="img/center.png">
+            <ul id="menu">
+                <li class="item"><a id="facility" href="facility_a.html">극장A</a></li>
+                <li>|</li>
+                <li class="item"><a id="facility" href="facility_b.html">극장B</a></li>
+                <li>|</li>
+                <li class="item"><a id="facility" href="facility_c.html">극장C</a></li>
+                <li>|</li>
+                <li class="item"><a id="facility" href="facility_d.html">식당</a></li>
+                <li>|</li>
+                <li class="item"><a id="facility" href="facility_e.html">주차장</a></li>
+            </ul>
+            <div id="grid">
+                <ol>
+                    <li>메인 공지사항</a></li>
+                </ol>
+                <div id="article">
+                    <h2>예매 안내</h2>
+                    <p>
+                        온라인 예매는 공연 안내 페이지에서, 오프라인 예매는 1층 안내소에서 할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <article id="address">
+            <ul id="footer_menu">
+                <li>개인정보 처리방침 | 이메일 무단 수집거부 | 저작권 정책</li>
+                <li><a id="ask" href="ask.html">고객센터 문의</a></li>
+            </ul>
+            <ul id="company_info">
+                <li>강원도 강릉시 종합운동장길 84(교동)</li>
+                <li id="copyright">Copyright by Rubato Company All Reserve</li>
+            </ul>
+        </article>
+
+        <article id="link">
+            <h3>고객센터 0000-0000</h3>
+        </article>
+    </footer>
+</body>
+
+</html>
