@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hw13_2(과제2)</title>
+        <style>
+            img{
+                width:200px;
+                height:170px;
+                margin-left:110px;
+            }
+            button{
+                margin-left:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $("document").ready(function(){
+                $("img.hide").hide();
+                $("button#soccer").click(function(){
+                    $("img.hide").hide();
+                    $("img#soccer").show();
+                });
+                $("button#baseball").click(function(){
+                    $("img.hide").hide();
+                    $("img#baseball").show();
+                });
+                $("button#bascketball").click(function(){
+                    $("img.hide").hide();
+                    $("img#bascketball").show();
+                });
+            })
+        </script>
+        <div>
+        <h1>당신이 좋아하는 스포츠는?</h1>
+        <br><br>
+            <button id="soccer">프로축구</button>
+            <button id="baseball">프로야구</button>
+            <button id="bascketball">프로농구</button>
+            <p/>
+        <img class="hide" id="soccer" src="./img/soccer.jpg">
+        <img class="hide" id="baseball" src="./img/baseball.png">
+        <img class="hide" id="bascketball" src="./img/bascketball.png">
+    </div>
+    </body>
+</html>
