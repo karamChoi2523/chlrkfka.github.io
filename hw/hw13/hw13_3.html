@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hw13_3(과제3)</title>
+    </head>
+    <body>
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            var n=0;
+            $(document).ready(function(){
+                $("img#big").hide();
+                $("button").click(function(){
+                        $("img#big").slideToggle();
+                    });
+                });
+        </script>
+        <img src="img/img.jpeg" width=200px height=180px>
+        <p/>
+        <button>큰 이미지 보기/닫기</button>
+        <p/>
+        <img id="big" src="./img/img.jpeg" width=700px height=650px>
+    </body>
+</html>
