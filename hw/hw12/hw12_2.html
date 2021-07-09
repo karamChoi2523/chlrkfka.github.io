@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .image {
+        width: 500px;
+        height: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="image" src="./img/img.jpeg" onmouseover="OnMouseOver(event)" onmouseout="OnMouseOut(event)">
+    </div>
+    <script>
+      function OnMouseOver(event) {
+        event.target.style.width = "600px";
+        event.target.style.height = "336px";
+        event.target.style.transition = "all 0.5s";
+      }
+  
+      function OnMouseOut(event) {
+        event.target.style.width = "500px";
+        event.target.style.height = "280px";
+        event.target.style.transition = "all 0.5s";
+      }
+    </script>
+  </body>
+</html>
